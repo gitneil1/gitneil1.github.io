@@ -1,0 +1,211 @@
+/* index-layout.css
+Author: Neil Agor
+Date: May 25, 2016
+Description:
+  Main design for the whole website ie layout, background..
+*/
+body{
+  background-color: #ebebeb; 
+  font-size: 62.5%;
+}
+
+.wrapper{
+  width: 1100px;
+  font-size: 1.6em;
+  margin: auto;
+  background-color: white;
+  font-family: "arial", cursive;
+  /* testing below */
+  clear: both;
+}
+
+p{
+  padding: 0 0 .8em 0;	
+}
+
+.heading{
+  /* padding-bottom: 2em; */
+  /* testing below */
+  /* height: 200px;  */
+  background-color: white;
+  font-family: "arial";
+}
+
+#logo{	
+  float: left;
+  /* testing below */
+  display: inline;
+  margin-left: 250px;
+  width: 100px;
+  height: 100px;
+}
+
+figcaption{
+  font-size: 2.2em;
+  padding-top: 3.4em;
+}
+
+nav{
+	padding-bottom: 1em;
+	/* width: 900px; */
+	/* margin: auto; */
+	/* padding-left: 200px; */
+	/* testing below */
+	margin: 0px;
+	width: 1100px;
+}
+
+li a{
+  text-decoration: none;
+}
+
+header.introduction{
+  width: 900px;
+  /* margin: auto; */
+  text-align: left;
+  /* padding-left: 200px; */
+  /* padding: 2em; */
+  /* border: 1px solid gray; */
+  margin-bottom: 1em;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+}
+
+header h1, header p{
+  font-style: italic;	
+}
+
+header.introduction h1{
+  font-size: 2em;
+}
+
+header.introduction figcaption{
+	padding-top: 0;
+	font-size: 1em;
+}
+
+.wrapper{
+  overflow: hidden;
+}
+
+main{
+  width: 700px;
+  /* margin: auto; */
+  float: left;
+  font-size: 1.3em;
+  word-spacing: 5px;
+}
+
+aside{
+  /* width: 200px; */
+  /* float: left; */
+  padding-bottom: 5000px;
+  margin-bottom: -5000px;
+  /* testing below */
+  float: right;
+  /* height: 300px; */
+  /* width: 150px; */
+}
+
+aside ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 180px;
+  background-color: #333; 
+}
+
+aside ul li a, aside ul li span{
+	display: block;
+	color: white;
+	padding: 8px 0 0px 16px;
+	text-decoration: none;
+}
+
+.dc, .marvel{
+  background-color: #4CAF50;
+  color: white;
+}
+
+aside ul li a:hover:not(.active){
+  background-color: #555;
+  color: white;
+}
+
+.right-nav{
+  /* width: 200px; */
+  /* float: right; */
+  /* testing below */
+  width: 700px;
+  margin-bottom: 2em;
+}
+
+.comments p{
+  font-size: .8em;
+}
+
+footer.credit{
+  margin-bottom: 2em;		
+}
+
+footer{
+  clear: both;
+  width: 900px;
+  margin: auto;
+}
+
+/* testing dropdown */
+ul.new_nav{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: #333;
+}
+	  
+ul.new_nav li{
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: left;
+  /* float: left; */ /* check 1 */
+  padding: 0;
+  margin: 0;
+}
+	  
+ul.new_nav li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a.active{
+  background-color: #4CAF50;	
+}	
+
+li a:hover:not(.active){
+  background-color: #555;
+}
+	  
+ul li a:hover{
+  color: #fff;
+  background: #4CAF50;
+}
+	  
+ul li ul.dropdown{
+  min-width: 100%; /* set width of the dropdown */
+  background: #333;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+	  
+ul li:hover ul.dropdown{
+  display: block;
+}
+	  
+ul li ul.dropdown li{
+  display: block;
+}
+/* end testing */
